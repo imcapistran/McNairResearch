@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../public/styles.css">
+    <link rel="icon" href="../public/images/avatar.png">
+</head>
+
+<body>
+
+<div name="signUpFormContainer" class="signUpFormContainer">
+    <form name="userSignUp" action="/createuser" onsubmit="return validateForm()" method="post" required>
+        <div class="userSignUpContainer">
+            <h1>Create an Account</h1>
+            <input type="text" id="name" name="user_name" placeholder="Name (Company Name)" required>
+            <br/>
+            <input type="email" id="email" name="email_add" placeholder= "student email" required>
+            <br/>
+            <input type="password" id="pwd" name="password" placeholder="Enter your Password" required>
+            <br/>
+            <button type="submit">Sign up</button>
+            <br/>
+            <br/>
+            <a href="login.html">Already have an account? Click here to login</a>
+        </div>
+     </form>
+</div> 
+
+</body>
+
+</html>

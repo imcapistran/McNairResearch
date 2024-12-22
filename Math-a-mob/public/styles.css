@@ -1,0 +1,26 @@
+html {
+    background: rgb(250, 196, 204);
+}
+
+h1 {
+    text-align: center;
+    color: tomato;
+}
+
+.loginFormContainer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.signUpFormContainer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.homePageMenu {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
