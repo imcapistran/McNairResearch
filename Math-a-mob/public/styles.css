@@ -1,26 +1,71 @@
 html {
-    background: rgb(250, 196, 204);
+    background-image: repeating-linear-gradient(to bottom,hwb(241 73% 9%), darkslateblue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    height:  100vh;   
 }
 
 h1 {
     text-align: center;
-    color: tomato;
+    color: rgb(0, 0, 0);
+}
+
+form {
+    display: inline-flex;
+    background-color: rgb(210, 208, 235);
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    border-radius: 20px;
+ 
+}
+
+.navBarContainer {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navList a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=submit] {
+    margin-bottom: 10px; 
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
 }
 
 .loginFormContainer {
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    min-height: 100vh;
 }
 
 .signUpFormContainer {
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    min-height: 100vh;
 }
 
-.homePageMenu {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
