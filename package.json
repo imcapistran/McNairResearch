@@ -1,0 +1,18 @@
+{
+  "name": "mcnairresearch",
+  "version": "1.0.0",
+  "description": "This is my ongoing research development towards building a digital platform focused on enhancing mathematical concepts by implementing gamified elements. Please follow along on this journey as I'll attempt to bring a software product to collegiate level students.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1"
+  }
+}

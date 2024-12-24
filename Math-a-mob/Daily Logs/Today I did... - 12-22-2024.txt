@@ -1,0 +1,7 @@
+Today I did...
+
+12-22-2024
+
+Today on this project, I've finally issued it to GitHub. Now that the repository is on GitHub, I'll be able to share my coding journey easily and display the ongoing efforts tangibly. 
+
+Expanded project, researched into building backend of gamified elements.
