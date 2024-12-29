@@ -1,0 +1,16 @@
+Today's focus will be implementing the backend for the login and sign up pages. 
+This will include installing Node.js
+implementing node modules, establishing routes, and creating a MySQL Database for the application.
+
+This including using the terminal and running npm commands. Now we have node.js running along with bcrypt to hash passwords. Express-session as a middleware for managing a session, and a body-parser which is middleware used to parse incoming request bodies.
+
+I created a JavaScript file called index.js to set up a basic express server.
+
+I have initialized the creation of the connection to the MySQL database and included the proper error messages.
+
+I'm able to run the service on the initial login page.
+
+-Did obtain an error, the navigation for links no longer work. 
+-Update** the fix was to change the app.get('/login') to app.get('/login.html'). This allowed my navigation links to work properly. 
+
+-Final update, the styling and navigation work properly. It's now time to develop the Database Schema for the project. 
