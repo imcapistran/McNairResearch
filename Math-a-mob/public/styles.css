@@ -26,24 +26,42 @@ form {
 
 .navBarContainer {
     background-color: #ffcc99; /* Light Orange */
-    opacity: 0.8;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
+    opacity: 0.9;
+    padding: 10px 20px;
     border-radius: 20px;
+    box-shadow: 3px 3px 5px #888888;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
 }
 
 .navList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    list-style: none;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.navList a {
+.navItem {
+    margin: 0 15px;
+}
+
+.navItem a {
     text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: bolder;
+    color: #330066; /* Very Dark Purple */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navItem a:hover {
+    color: #ff9966; /* Peach */
+}
+
+.mainContent {
+    text-align: center;
+    margin-top: 20px;
+    color: #330066; /* Very Dark Purple */
 }
 
 input[type=text], input[type=password], input[type=email], input[type=submit] {
@@ -103,6 +121,67 @@ input[type=text], input[type=password], input[type=email], input[type=submit] {
     background-color: #ff9966; /* Peach */
     transform: scale(1.05);
     box-shadow: 1px 1px 3px #888888;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.back-button::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #663300; /* Dark Brown */
+}
+
+.back-button:hover::before {
+    border-right-color: #ff9966; /* Peach */
+}
+
+.back-button:active::before {
+    border-right-color: #ff9966; /* Peach */
+    transform: scale(1.05);
+}
+
+.leaderboard-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.leaderboard-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 600px;
+    background-color: #ffccff; /* Very Light Pink Magenta */
+    border: 2px solid #cc9966; /* Medium Brown */
+    box-shadow: 3px 3px 5px #888888;
+}
+
+.leaderboard-table th, .leaderboard-table td {
+    border: 1px solid #cc9966; /* Medium Brown */
+    padding: 10px;
+    text-align: center;
+    color: #330066; /* Very Dark Purple */
+}
+
+.leaderboard-table th {
+    background-color: #ffcc99; /* Light Orange */
+}
+
+.leaderboard-table tr:nth-child(even) {
+    background-color: #ffccff; /* Very Light Pink Magenta */
 }
 
 /* Additional Complementary Colors */

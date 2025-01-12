@@ -9,6 +9,7 @@
         <link rel="icon" href="../images/abacus.png">
     </head>
     <body>
+        <button class="back-button" onclick="goBack()">Back</button>
         <h1>Select a Level!</h1>
         <div class="level-buttons">
             <button class="level-button" onclick="selectLevel(1)">Level 1</button>
@@ -26,6 +27,10 @@
         <script>
             function selectLevel(level) {
                 window.location.href = `level${level}.html`;
+            }
+
+            function goBack() {
+                window.location.href = '../home.html';
             }
         </script>
     </body>

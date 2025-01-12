@@ -2,11 +2,68 @@
 
 <html lang="en">
     <head>
-        <h1>Welcome!</h1>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leaderboard</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="">
+        <link rel="icon" href="images/sports_medal.png">
     </head>
     <body>
-        
+        <nav class="navBarContainer">
+            <ul class="navList">
+                <li class="navItem"><a href="challenges.html">Challenges</a></li>
+                <li class="navItem"><a href="leaderboard.html">Leaderboard</a></li>
+                <li class="navItem"><a href="userProfile.html">User Page</a></li>
+                <li class="navItem"><a href="levels/levels.html">Level Select</a></li>
+                <li class="navItem"><a href="../login/login.html">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="mainContent">
+            <h1>Leaderboard</h1>
+            <div id="leaderboard-container" class="leaderboard-container">
+                <!-- Leaderboard data will be populated here -->
+            </div>
+            <p>Select a level to view the leaderboard:</p>
+            <div class="level-buttons">
+                <button class="level-button" onclick="showLeaderboard(1)">Level 1</button>
+                <button class="level-button" onclick="showLeaderboard(2)">Level 2</button>
+                <button class="level-button" onclick="showLeaderboard(3)">Level 3</button>
+                <button class="level-button" onclick="showLeaderboard(4)">Level 4</button>
+                <button class="level-button" onclick="showLeaderboard(5)">Level 5</button>
+                <button class="level-button" onclick="showLeaderboard(6)">Level 6</button>
+                <button class="level-button" onclick="showLeaderboard(7)">Level 7</button>
+                <button class="level-button" onclick="showLeaderboard(8)">Level 8</button>
+                <button class="level-button" onclick="showLeaderboard(9)">Level 9</button>
+                <button class="level-button" onclick="showLeaderboard(10)">Level 10</button>
+            </div>
+        </div>
+
+        <script>
+            function showLeaderboard(level) {
+                // Fetch leaderboard data for the selected level (this is just a placeholder)
+                const leaderboardData = [
+                    { rank: 1, name: 'Player1', score: 100 },
+                    { rank: 2, name: 'Player2', score: 90 },
+                    { rank: 3, name: 'Player3', score: 80 }
+                ];
+
+                // Populate the leaderboard container with the data
+                const container = document.getElementById('leaderboard-container');
+                container.innerHTML = `<h2>Leaderboard for Level ${level}</h2>`;
+                const table = document.createElement('table');
+                table.classList.add('leaderboard-table');
+                const headerRow = document.createElement('tr');
+                headerRow.innerHTML = '<th>Rank</th><th>Name</th><th>Score</th>';
+                table.appendChild(headerRow);
+
+                leaderboardData.forEach(entry => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `<td>${entry.rank}</td><td>${entry.name}</td><td>${entry.score}</td>`;
+                    table.appendChild(row);
+                });
+
+                container.appendChild(table);
+            }
+        </script>
     </body>
 </html>
