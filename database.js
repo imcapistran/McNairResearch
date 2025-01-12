@@ -5,7 +5,7 @@ const db = mysql.createConnection({
     host: 'localhost',
     user: 'admin',
     password: 'root',
-    database: 'mcnair_research_database'
+    database: 'database_mcnair'
 });
 
 //Connection to the database
@@ -16,3 +16,5 @@ db.connect(err => {
     }
     console.log('Connected to the MySQL Database.');
 });
+
+module.exports = db; //Exporting the database connection.

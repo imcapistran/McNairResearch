@@ -1,0 +1,5 @@
+Today I did research into Node.js and how to start a server for the web application.
+
+-I implemented the database schema into SQL workbench. Now it is time to incorporate the database into the program.
+as a result, adjustments were made to the 'DatabaseSchema.drawio' file to properly reflect the function of the database.
+

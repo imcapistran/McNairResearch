@@ -1,31 +1,31 @@
 html {
-    background-image: repeating-linear-gradient(to bottom,hwb(241 73% 9%), darkslateblue);
+    background-image: repeating-linear-gradient(to bottom, hwb(241 73% 9%), darkslateblue);
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
-    font-family: Helvetica, sans-serif;
-    height:  100vh;   
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    height: 100vh;
 }
 
 h1 {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: #330066; /* Very Dark Purple */
 }
 
 form {
     display: inline-flex;
-    background-color: rgb(210, 208, 235);
+    background-color: #ffccff; /* Very Light Pink Magenta */
     margin: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 1.5rem 2rem;
     border-radius: 20px;
- 
+    box-shadow: 3px 3px 5px #888888;
 }
 
 .navBarContainer {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffcc99; /* Light Orange */
     opacity: 0.8;
     align-items: center;
     justify-content: space-between;
@@ -69,3 +69,58 @@ input[type=text], input[type=password], input[type=email], input[type=submit] {
     min-height: 100vh;
 }
 
+.level-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.level-button {
+    background-color: #ffcc99; /* Light Orange */
+    border: 2px solid #cc9966; /* Medium Brown */
+    color: #663300; /* Dark Brown */
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 3px 3px 5px #888888;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.level-button:hover {
+    background-color: #ff9966; /* Peach */
+    transform: scale(1.1);
+}
+
+.level-button:active {
+    background-color: #ff9966; /* Peach */
+    transform: scale(1.05);
+    box-shadow: 1px 1px 3px #888888;
+}
+
+/* Additional Complementary Colors */
+/* 
+#ffcc66 - Light Yellow
+#ffcc33 - Yellow
+#ff9933 - Orange
+#cc6600 - Dark Orange
+#996633 - Light Brown
+#cc3300 - Red-Orange
+#ff6666 - Light Red
+#ff9999 - Pink
+#ffcccc - Light Pink
+#cc99ff - Medium Purple
+#9966ff - Purple
+#660066 - Dark Magenta
+#993366 - Magenta
+#cc6699 - Light Magenta
+#ff66cc - Pink Magenta
+#ff99cc - Light Pink Magenta
+*/
