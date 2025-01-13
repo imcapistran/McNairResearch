@@ -1,5 +1,5 @@
 html {
-    background-image: repeating-linear-gradient(to bottom, hwb(241 73% 9%), darkslateblue);
+    background-color:#A6BDF8;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
@@ -14,7 +14,7 @@ h1 {
 
 form {
     display: inline-flex;
-    background-color: #ffccff; /* Very Light Pink Magenta */
+    background-color: #ffcc99; /* Very Light Pink Magenta */
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -164,7 +164,7 @@ input[type=text], input[type=password], input[type=email], input[type=submit] {
     border-collapse: collapse;
     width: 80%;
     max-width: 600px;
-    background-color: #ffccff; /* Very Light Pink Magenta */
+    background-color: #FEEDEB; /* Very Light Pink Magenta */
     border: 2px solid #cc9966; /* Medium Brown */
     box-shadow: 3px 3px 5px #888888;
 }
@@ -181,7 +181,7 @@ input[type=text], input[type=password], input[type=email], input[type=submit] {
 }
 
 .leaderboard-table tr:nth-child(even) {
-    background-color: #ffccff; /* Very Light Pink Magenta */
+    background-color: #EAD6F5; /* Very Light Pink Magenta */
 }
 
 /* Additional Complementary Colors */
