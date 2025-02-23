@@ -10,7 +10,7 @@ CREATE TABLE users(
     primary key (user_id)
     );
 
-CREATE TABLE user_progress (
+CREATE TABLE user_progreschallengess (
 	progress_id int auto_increment,
     user_id INT NOT NULL,
     level_id INT NOT NULL,

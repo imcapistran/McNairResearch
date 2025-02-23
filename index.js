@@ -4,7 +4,6 @@ const bodyParser = require('body-parser'); //Parse requests
 const bcrypt = require('bcrypt'); //Hash passwords
 const path = require('path'); //initialize path to application
 
-
 const app = express();
 const PORT = 3000;
 
@@ -16,22 +15,19 @@ app.use(session({
     saveUninitialized: true
 }));
 
-//Serves the login file as the default path
-app.get('/login.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'Math-a-mob','login', 'login.html'));
+//Login page will be default page
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'Math-a-mob', 'public', 'login', 'login.html'));
 });
 
-// Serve the signup page
-app.get('/signup.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'Math-a-mob', 'login', 'signup.html')); // Update the path to your signup.html file
-});
+app.use(express.static(path.join(__dirname, 'Math-a-mob', 'public', 'login')));
 
 //Serves files from the public directory
 app.use(express.static(path.join(__dirname, 'Math-a-mob', 'public')));
 
 
 // Login endpoint
-app.post('/login', async (req, res) => {
+app.post('/login.html', async (req, res) => {
     const { username, password } = req.body;
     const user = users.find(u => u.username === username);
     
@@ -41,6 +37,10 @@ app.post('/login', async (req, res) => {
     } else {
         res.status(401).send('Invalid username or password');
     }
+});
+
+app.get('/audio', (req, res) => {
+    res.sendFile(path.join(__dirname, 'Math-a-mob', 'public', 'audio', 'audio.m4a'));
 });
 
 // Start the server
