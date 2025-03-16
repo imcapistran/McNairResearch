@@ -185,44 +185,16 @@ input[type=text], input[type=password], input[type=email], input[type=submit] {
 }
 
 .gameArea {
-    background-color: skyblue;
-    position: relative;
-    height: 100vh;
     display: flex;
+    background-color: skyblue;
+    align-items: center;
     justify-content: center;
 }
 
-.counterArea {
-    background-color: blue;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 2; 
-}
-.counterArea img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    
+.gameArea img {
+    align-items: center;
 }
 
-.floorArea {
-    background-color: red;
-    position: absolute;
-    bottom: 100px;
-    width: 100%;
-    text-align: center;
-    z-index: 1; 
-}
-
-.floorArea img {
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
 
 /* Additional Complementary Colors */
 /* 
