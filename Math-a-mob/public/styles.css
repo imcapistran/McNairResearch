@@ -1,5 +1,5 @@
 html {
-    background-color:#A6BDF8;
+    background-color:#639D75;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
@@ -185,6 +185,7 @@ input[type=text], input[type=password], input[type=email], input[type=submit] {
 }
 
 .gameArea {
+    background-color: #330066;
     display: flex;
     background-color: skyblue;
     align-items: center;
@@ -192,6 +193,8 @@ input[type=text], input[type=password], input[type=email], input[type=submit] {
 }
 
 .gameArea img {
+    width: 100%;
+    height: auto;
     align-items: center;
 }
 
