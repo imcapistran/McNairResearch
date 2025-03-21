@@ -193,7 +193,7 @@ input[type=text], input[type=password], input[type=email], input[type=submit] {
 }
 
 .gameArea img {
-    width: 100%;
+    max-inline-size: 100%;
     height: auto;
     align-items: center;
 }
