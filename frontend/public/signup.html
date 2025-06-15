@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/assets/favicons/avatar.png" type="image/x-icon">
+</head>
+<body>
+    <div class="signup-container">
+    <h1>Create an Account 🍕</h1>
+     <form action="/signup" method="POST" id="signup-form">
+            <input type="text" name="username" placeholder="Username" required
+            pattern="^[a-zA-Z0-9_]{4,20}$" 
+            title="Username must be 4-20 characters long and can only contain letters, numbers, and underscores.">
+            <br>
+            <input type="password" name="password" required
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$"
+                title="8+ characters, with uppercase, lowercase, number, and symbol."
+                placeholder="Password">
+            <br>
+            <input type="submit" value="Sign Up">
+        </form>
+        <h4><a href="login.html">Already have an account?</a></h4>
+    </div>
+</body>
+</html>

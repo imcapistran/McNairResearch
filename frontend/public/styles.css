@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(to right, #ff9966, #ff5e62); /* Peach to Light Orange */
+    font-family: 'CustomFont', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: palegreen;
+}
+
+.login-container, .signup-container, .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    font-size: 60px;
+    color: white;
+    
+}
+
+input[type=text], input[type=password], input[type=submit] {
+    font-family: 'CustomFont', sans-serif;
+    margin-bottom: 10px; 
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+input::placeholder {font-family: 'CustomFont', sans-serif;}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../assets/fonts/pizzaria-font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

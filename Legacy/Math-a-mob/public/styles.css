@@ -1,0 +1,220 @@
+html {
+    background-color:#639D75;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #330066; /* Very Dark Purple */
+}
+
+form {
+    display: inline-flex;
+    background-color: #ffcc99; /* Very Light Pink Magenta */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px #888888;
+}
+
+.navBarContainer {
+    background-color: #ffcc99; /* Light Orange */
+    opacity: 0.9;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px #888888;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+.navList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navItem {
+    margin: 0 15px;
+}
+
+.navItem a {
+    text-decoration: none;
+    color: #330066; /* Very Dark Purple */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navItem a:hover {
+    color: #ff9966; /* Peach */
+}
+
+.mainContent {
+    text-align: center;
+    margin-top: 20px;
+    color: #330066; /* Very Dark Purple */
+}
+
+input[type=text], input[type=password], input[type=email], input[type=submit] {
+    margin-bottom: 10px; 
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+.loginFormContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.signUpFormContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.level-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.level-button {
+    background-color: #ffcc99; /* Light Orange */
+    border: 2px solid #cc9966; /* Medium Brown */
+    color: #663300; /* Dark Brown */
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 3px 3px 5px #888888;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.level-button:hover {
+    background-color: #ff9966; /* Peach */
+    transform: scale(1.1);
+}
+
+.level-button:active {
+    background-color: #ff9966; /* Peach */
+    transform: scale(1.05);
+    box-shadow: 1px 1px 3px #888888;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.back-button::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #663300; /* Dark Brown */
+}
+
+.back-button:hover::before {
+    border-right-color: #ff9966; /* Peach */
+}
+
+.back-button:active::before {
+    border-right-color: #ff9966; /* Peach */
+    transform: scale(1.05);
+}
+
+.leaderboard-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.leaderboard-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 600px;
+    background-color: #FEEDEB; /* Very Light Pink Magenta */
+    border: 2px solid #cc9966; /* Medium Brown */
+    box-shadow: 3px 3px 5px #888888;
+}
+
+.leaderboard-table th, .leaderboard-table td {
+    border: 1px solid #cc9966; /* Medium Brown */
+    padding: 10px;
+    text-align: center;
+    color: #330066; /* Very Dark Purple */
+}
+
+.leaderboard-table th {
+    background-color: #ffcc99; /* Light Orange */
+}
+
+.leaderboard-table tr:nth-child(even) {
+    background-color: #EAD6F5; /* Very Light Pink Magenta */
+}
+
+.gameArea {
+    background-color: #330066;
+    display: flex;
+    background-color: skyblue;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameArea img {
+    max-inline-size: 100%;
+    height: auto;
+    align-items: center;
+}
+
+
+/* Additional Complementary Colors */
+/* 
+#ffcc66 - Light Yellow
+#ffcc33 - Yellow
+#ff9933 - Orange
+#cc6600 - Dark Orange
+#996633 - Light Brown
+#cc3300 - Red-Orange
+#ff6666 - Light Red
+#ff9999 - Pink
+#ffcccc - Light Pink
+#cc99ff - Medium Purple
+#9966ff - Purple
+#660066 - Dark Magenta
+#993366 - Magenta
+#cc6699 - Light Magenta
+#ff66cc - Pink Magenta
+#ff99cc - Light Pink Magenta
+*/
