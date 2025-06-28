@@ -93,7 +93,9 @@ app.post('/login', async (req, res) => {
         //Compare hashed password
         const match = await bcrypt.compare(password, user.password);
         if (match) {
-            req.session.user = { username: user.username };
+            req.session.user = { username: user.username,
+                user_id: user.user_id
+             };
             //Login successful
             res.redirect('/home.html');
         } else {
@@ -132,6 +134,23 @@ app.get('/:page.html', (req, res) => {
     }
 
     res.sendFile(path.join(__dirname, `../frontend/protected/${page}.html`));
+});
+
+app.post('/feedback', async (req, res) => {
+    if (!req.session.user) {
+        return res.redirect('/login.html');
+    }
+    const user_id = req.session.user.user_id;
+    const message = req.body.message;
+
+    try {
+        // Insert feedback into the database
+        await db.query('INSERT INTO feedback (user_id, message) VALUES (?, ?)', [user_id, message]);
+        res.redirect('/feedback.html?success=true');
+    } catch (err) {
+        console.error(err);
+        res.status(500).send('Server error. Please try again later.');
+    }
 });
 
 app.listen(PORT, () => {

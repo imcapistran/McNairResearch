@@ -12,7 +12,7 @@ a:hover {
     color: palegreen;
 }
 
-.login-container, .signup-container, .menu {
+.login-container, .signup-container, .menu, .feedback-container, .leaderboard-container, .game-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,12 +24,12 @@ a:hover {
     
 }
 
-input[type=text], input[type=password], input[type=submit] {
+input[type=text], input[type=password], input[type=submit], textarea{
     font-family: 'CustomFont', sans-serif;
     margin-bottom: 10px; 
     border-radius: 5px;
     border: none;
-    padding: 10px;
+    padding: 15px;
 }
 
 input::placeholder {font-family: 'CustomFont', sans-serif;}

@@ -5,9 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/assets/favicons/thinking.png" type="image/x-icon">
     
 </head>
 <body>
+    <div class="feedback-container">   
+    <h1>Feedback</h1>
+    <form id="feedback-form" action="/feedback" method="POST">
+        <textarea id="message" name="message" placeholder="Enter your feedback here..." required></textarea><br>
+        <input type="submit"></input>
+    </form>
+    <a href="/home.html">Back to Menu</a>
+    </div>
+
+    <script>
+  // Check if URL has ?success=true
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('success') === 'true') {
+    const messageBox = document.createElement('p');
+    messageBox.textContent = 'Your feedback was submitted successfully!';
+    messageBox.style.color = 'green';
+    // Insert the message at the top or wherever you want
+    document.body.insertBefore(messageBox, document.body.firstChild);
     
+    // Optional: remove the query string from URL after showing message (clean URL)
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+</script>
+
 </body>
 </html>
